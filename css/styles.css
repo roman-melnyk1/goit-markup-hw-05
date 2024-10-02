@@ -600,19 +600,18 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    padding-top: 72px;
     margin-bottom: 16px;
 
 }
 
 .sent-btn {
-    display: flex;
+    display: block;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
@@ -838,9 +837,9 @@ img {
 }
 
 .footer-btn {
-    display: block;
+    display: flex;
     border-radius: 4px;
-    min-width: 169px;
+    min-width: 165px;
     height: 40px;
     justify-content: center;
     align-items: center;
