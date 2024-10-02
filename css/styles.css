@@ -498,7 +498,7 @@ img {
     display: block;
 }
 
-.visualy-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -686,6 +686,7 @@ img {
     left: 50%;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
+    transform: translate(-50%, -50%);
 }
 
 .backdrop.is-open {
@@ -837,9 +838,9 @@ img {
 }
 
 .footer-btn {
-    display: flex;
+    display: block;
     border-radius: 4px;
-    min-width: 165px;
+    min-width: 169px;
     height: 40px;
     justify-content: center;
     align-items: center;
@@ -860,5 +861,10 @@ img {
 
 .footer-form-icon {
     margin-left: 16px;
+    fill: #fff;
+}
+
+.close-btn:hover,
+.close-btn:focus {
     fill: #fff;
 }
