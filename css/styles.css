@@ -542,11 +542,12 @@ img {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     opacity: 0;
     pointer-events: none;
     transition: opasity 250ms ease-in-out;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-form {
@@ -665,14 +666,18 @@ img {
 }
 
 .my-form-div {
-    position: relative;
-    max-width: 408px;
+    position: absolute;
+    width: 408px;
     height: 80%;
-    max-height: 584x;
+    min-height: 584x;
     border-radius: 4px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
     overflow: auto;
+    top: 50%;
+    left: 50%;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
 }
 
 .backdrop.is-open {
@@ -682,20 +687,32 @@ img {
 
 .close-btn {
     position: absolute;
-    fill: #e7e9fc;
     background-color: transparent;
     justify-content: center;
     align-items: center;
     top: 24px;
     right: 24px;
-    border-radius: 100%;
+    border-radius: 50%;
     width: 24px;
     height: 24px;
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    background-color: #404bbf;
+    border: none;
 }
 
 .close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: #2e2f42;
 }
+
 
 .form-wrapper {
     margin-bottom: 8px;
