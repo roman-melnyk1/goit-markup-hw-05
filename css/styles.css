@@ -768,12 +768,15 @@ img {
 .footer-blank {
     margin-left: 80px;
     max-width: 453px;
-    display: flex;
+}
 
+.footer-form {
+    display: flex;
+    gap: 24px;
+    margin-right: 24px;
 }
 
 .footer-input {
-    display: block;
     width: 264px;
     height: 40px;
     background-color: transparent;
@@ -796,8 +799,8 @@ img {
     color: #fff;
 }
 
-.label-footer {
-    display: inline-block;
+.footer-paragraph {
+    display: flex;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -807,9 +810,9 @@ img {
 }
 
 .footer-btn {
-    margin-left: 24px;
+    display: flex;
     border-radius: 4px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     justify-content: center;
     align-items: center;
@@ -820,10 +823,19 @@ img {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
-    outline: none;
+    border: none;
 }
 
 .footer-btn:hover,
 .footer-btn:active {
     background-color: #404BBF;
+}
+
+.footer-form-icon {
+    margin-left: 16px;
+    fill: #fff;
+}
+
+.footer-contacts {
+    display: flex;
 }
